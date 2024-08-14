@@ -150,6 +150,14 @@ body {
     color: #000814;
 }
 
+.contacto {
+    margin-top: 5rem;
+}
+
+.contacto h4 {
+    padding-bottom: 2rem;
+}
+
 footer {
     background-color: #000814;
     padding: 20px 0;
