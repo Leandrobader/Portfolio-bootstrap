@@ -22,7 +22,7 @@
     <title>Portfolio Leandro Bader</title>
 </head>
 
-<body>
+<body data-bs-theme="light">
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -35,13 +35,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                            <a class="nav-link" aria-current="page" href="#">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Proyectos</a>
+                            <a class="nav-link" href="#Proyectos">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="#Contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -58,18 +58,20 @@
             <div class="button">
                 <a href="https://drive.google.com/file/d/1rzM_l6rJ0mBllLlUkLgUqcBx_XYVrsyg/view?usp=drive_link"
                     download="LeandroBader_CV" target="_blank" class="anchor">
-                    <span>Download CV</span>
+                    <span>Descargar CV</span>
                 </a>
             </div>
-            <div class="icon-link">
-                <a href="#"><i class="fa-brands fa-square-github fa-2xl"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+            <div class="icon-link mt-3">
+                <a class="icon-hover" href="https://github.com/Leandrobader" target="_blank"><i
+                        class="fa-brands fa-square-github fa-2xl"></i></a>
+                <a class="icon-hover" href="https://www.linkedin.com/in/leandrobader" target="_blank"><i
+                        class="fa-brands fa-linkedin fa-2xl"></i></a>
             </div>
         </div>
         <div class="contenedor-img">
             <img class="img" src="../images/imgbody.svg" alt="">
         </div>
-        <section class="proyectos">
+        <section id="Proyectos" class="proyectos">
             <h1>Mis proyectos recientes</h1>
             <h2>A continuación se muestran algunnos proyectos en los que he trabajado. <br>¿Quieres ver más? ingresa a
                 mi perfil de Github y Linkedin.</h2>
@@ -79,15 +81,18 @@
                     <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
                         <div class="card mb-4" style="width: 20rem;">
                             <div class="img-container">
-                                <img src="../images/LogoBurgerscript.png" class="card-img-top" alt="Burgerscript">
-                                <img src="../images/burgerscriptgif.gif" class="card-gif" alt="Gif">
+                                <a href="https://burgerscript.netlify.app/" target="_blank">
+                                    <img src="../images/LogoBurgerscript.png" class="card-img-top" alt="Burgerscript">
+                                    <img src="../images/burgerscriptgif.gif" class="card-gif" alt="Gif">
+                                </a>
                             </div>
 
                             <div class="card-body">
                                 <h5 class="card-title">BURGERSCRIPT</h5>
                                 <p class="card-text">Ecommerce de hamburguesas implementando un login de usuarios, CRUD
                                     de productos y API</p>
-                                <a href="#"><i class="fa-brands fa-github" title="Repositorio Github"></i></a>
+                                <a class="icon-hover" href="https://github.com/Leandrobader/BurgerScript-Front"
+                                    target="_blank"><i class="fa-brands fa-github" title="Repositorio Github"></i></a>
                                 <div>
 
                                     <i class="fa-brands fa-html5" title="HTML5"></i>
@@ -101,16 +106,22 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+
                         <div class="card mb-4" style="width: 20rem;">
+
                             <div class="img-container">
-                                <img src="../images/LogoBarroyfuego.png" class="card-img-top" alt="Burgerscript">
-                                <img src="../images/barroyfuegogif.gif" class="card-gif" alt="Gif">
+                                <a href="https://barroyfuego.netlify.app/" target="_blank"><img
+                                        src="../images/LogoBarroyfuego.png" class="card-img-top" alt="Burgerscript">
+                                    <img src="../images/barroyfuegogif.gif" class="card-gif" alt="Gif">
+                                </a>
                             </div>
+
                             <div class="card-body">
                                 <h5 class="card-title">BARRO Y FUEGO</h5>
                                 <p class="card-text">Blog de ceramica con recetas y tecnicas de horneado y pintado.
                                     Sitio realizado con HTML y CSS</p>
-                                <a href="#"><i class="fa-brands fa-github" title="Repositorio Github"></i></a>
+                                <a class="icon-hover" href="https://github.com/Leandrobader/Barro-y-Fuego"
+                                    target="_blank"><i class="fa-brands fa-github" title="Repositorio Github"></i></a>
                                 <div>
 
                                     <i class="fa-brands fa-html5" title="HTML5"></i>
@@ -172,25 +183,44 @@
                     </div>
                 </div>
 
-                <section class="contacto">
+                <section id="Contacto" class="contacto">
                     <h1 class="mt-4">CONTÁCTAME</h1>
                     <h4>Ponte en contacto conmigo o envíame un correo electronico a <b>baderleadro@gmail.com</b></h4>
                     <div class="row d-flex justify-content-center">
-                        <form class="col-sm-12 col-md-9">
+                        <form class="col-sm-12 col-md-9" action="https://formsubmit.co/e2b05d104e58e31c45c15d6ad0a49df1"
+                            method="POST">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                                <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="Nombre"
+                                    required minlength="2" maxlength="25">
                                 <label for="nombre">Nombre</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com"
+                                    name="Email" required minlength="8" maxlength="256">
                                 <label for="email">Email</label>
                             </div>
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" placeholder="Deja tu mensaje aquí" id="mensaje"
-                                    style="height: 100px"></textarea>
+                                    style="height: 100px" name="Mensaje" required minlength="5"
+                                    maxlength="500"></textarea>
                                 <label for="mensaje">Mensaje</label>
                             </div>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="submit">
+                                <div class="svg-wrapper-1">
+                                    <div class="svg-wrapper">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                            height="24">
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path fill="currentColor"
+                                                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <span>Enviar</span>
+                            </button>
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                            <input type="hidden" name="_captcha" value="false">
                         </form>
                     </div>
                 </section>
@@ -210,6 +240,8 @@
         crossorigin="anonymous"></script>
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/214682a10c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../index.js"></script>
 </body>
 
 </html>
