@@ -184,6 +184,10 @@ body {
     margin-bottom: 6rem;
 }
 
+.card {
+    --bs-card-bg: #ffffff85;
+}
+
 .card-img-top {
     background: black;
     width: 100%;
